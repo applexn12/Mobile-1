@@ -15,3 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+Mobile.startApplication('C:\\Users\\Krishna\\Downloads\\ApiDemos-WhiteScreen.apk', true)
+
+Mobile.scrollToText('Views', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('android.widget.TextView0 - Views (2)'), 0)
+
+Mobile.scrollToText('Tabs', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('android.widget.TextView0 - Tabs (2)'), 0)
+
+Mobile.closeApplication()
+
